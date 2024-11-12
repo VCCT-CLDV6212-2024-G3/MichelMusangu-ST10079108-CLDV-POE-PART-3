@@ -1,0 +1,29 @@
+﻿@model ProductModel
+
+@{
+    ViewData["Title"] = "Product Page";
+}
+<h1>
+    Products Form
+</h1>
+<div class="form-body">
+    <div class="form-section">
+        <form asp-action="StoreProductInfo" method="post" enctype="multipart/form-data">
+            <div>
+                
+                <input placeholder="Product Name" type="text" id="name" name="Name" value="" required>
+            </div>
+            <div>
+                
+                <input placeholder="Price" type="number" id="price" name="Price" value="" required>
+            </div>
+            <div>
+                
+                <input placeholder="Category" type="text" id="category" name="Category" value="" required>
+            </div>
+            <div>
+                <button class="submitBtn" type="submit">Add product</button>
+            </div>
+        </form>
+    </div>
+</div>
